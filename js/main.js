@@ -1,4 +1,4 @@
-// PRODUCTOS
+
 const productos = [
     // Abrigos
     {
@@ -251,9 +251,17 @@ function actualizarBotonesAgregar() {
         boton.addEventListener("click", agregarAlCarrito);
     });
 }
+let productosEnCarrito;
 
-const productosEnCarrito = [];
+let productosEnCarritoLS = localStorage.getItem("productos-en-carrito");
 
+
+if (productosEnCarritoLS) {
+    productosEnCarrito = JSON.parse(productosEnCarritoLS);
+    actualizarNumerito();
+} else {
+    productosEnCarrito = [];
+}
 
 function agregarAlCarrito(e){
 
