@@ -51,84 +51,84 @@ const productos = [
         },
         precio: 1000
     },
-    // Camisetas
+    // Remeras
     {
         id: "remera-01",
         titulo: "Remera 01",
-        imagen: "./img/camisetas/remera1.jpg",
+        imagen: "./img/remeras/remera1.jpg",
         categoria: {
-            nombre: "Camisetas",
-            id: "camisetas"
+            nombre: "Remeras",
+            id: "remeras"
         },
         precio: 1000
     },
     {
         id: "remera-02",
         titulo: "Remera 02",
-        imagen: "./img/camisetas/remera2.jpg",
+        imagen: "./img/remeras/remera2.jpg",
         categoria: {
-            nombre: "Camisetas",
-            id: "camisetas"
+            nombre: "Remeras",
+            id: "remeras"
         },
         precio: 1000
     },
     {
         id: "remera-03",
         titulo: "Remera 03",
-        imagen: "./img/camisetas/remera3.jpg",
+        imagen: "./img/remeras/remera3.jpg",
         categoria: {
-            nombre: "Camisetas",
-            id: "camisetas"
+            nombre: "Remeras",
+            id: "remeras"
         },
         precio: 1000
     },
     {
         id: "remera-04",
         titulo: "Remera 04",
-        imagen: "./img/camisetas/remera4.jpg",
+        imagen: "./img/remeras/remera4.jpg",
         categoria: {
-            nombre: "Camisetas",
-            id: "camisetas"
+            nombre: "Remeras",
+            id: "remeras"
         },
         precio: 1000
     },
     {
         id: "remera-05",
         titulo: "Remera 05",
-        imagen: "./img/camisetas/remera5.jpg",
+        imagen: "./img/remeras/remera5.jpg",
         categoria: {
-            nombre: "Camisetas",
-            id: "camisetas"
+            nombre: "Remeras",
+            id: "remeras"
         },
         precio: 1000
     },
     {
         id: "remera-06",
         titulo: "Remera 06",
-        imagen: "./img/camisetas/remera6.jpg",
+        imagen: "./img/remeras/remera6.jpg",
         categoria: {
-            nombre: "Camisetas",
-            id: "camisetas"
+            nombre: "Remeras",
+            id: "remeras"
         },
         precio: 1000
     },
     {
         id: "remera-07",
         titulo: "Remera 07",
-        imagen: "./img/camisetas/remera7.jpg",
+        imagen: "./img/remeras/remera7.jpg",
         categoria: {
-            nombre: "Camisetas",
-            id: "camisetas"
+            nombre: "Remeras",
+            id: "remeras"
         },
         precio: 1000
     },
     {
         id: "remera-08",
         titulo: "Remera 08",
-        imagen: "./img/camisetas/remera8.jpg",
+        imagen: "./img/remeras/remera8.jpg",
         categoria: {
-            nombre: "Camisetas",
-            id: "camisetas"
+            nombre: "Remeras",
+            id: "remeras"
         },
         precio: 1000
     },
@@ -184,3 +184,10 @@ const productos = [
         precio: 1000
     }
 ];
+
+const contenedorProductos = document.querySelector("#contenedor-productos");
+
+
+function cargarProductos () {
+
+}
