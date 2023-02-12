@@ -67,7 +67,7 @@ aside {
     gap: 1rem;
     font-weight: 600;
     padding: 1rem;
-    font-size: 1.25rem;
+    font-size: 1.0rem;
     width: 100%;
 }
 
@@ -113,6 +113,7 @@ aside {
     color: var(--clr-main);
     padding: .15rem .25rem;
     border-radius: .25rem;
+    margin-right: 0.50rem;
 }
 
 .boton-carrito.active .numerito {
