@@ -14,7 +14,7 @@ const tituloPrincipal = document.querySelector("#titulo-principal");
 let botonesAgregar = document.querySelectorAll(".producto-agregar");
 const numerito = document.querySelector("#numerito");
 
-
+// funcion de carga de productos
 function cargarProductos (productosElegidos) {
 
     contenedorProductos.innerHTML = "";
@@ -85,9 +85,9 @@ if (productosEnCarritoLS) {
 } else {
     productosEnCarrito = [];
 }
-
+// funcion de agregar al carrito
 function agregarAlCarrito(e){
-
+// toastify para alerta de producto agregado al carrito
     Toastify({
         text: "producto agregado al carrito",
         duration: 3000,
@@ -122,7 +122,7 @@ function agregarAlCarrito(e){
 
     localStorage.setItem("productos-en-carrito", JSON.stringify(productosEnCarrito));
 }
-
+// funcion para actualizar numero de productos en el carrito
 function actualizarNumerito() {
     let nuevoNumerito = productosEnCarrito.reduce((acc, producto) => acc + producto.cantidad, 0);
     numerito.innerText = nuevoNumerito;

@@ -10,6 +10,7 @@ const botonVaciar = document.querySelector("#carrito-acciones-vaciar");
 const contenedorTotal = document.querySelector("#total");
 const botonComprar = document.querySelector("#carrito-acciones-comprar");
 
+// funcion de carga de productos que se encuentran en el carrito
 function cargarProductosCarrito() {
 
     if (productosEnCarrito && productosEnCarrito.length > 0) {
@@ -74,8 +75,9 @@ function actualizarBotonesEliminar() {
         boton.addEventListener("click", eliminarDelCarrito);
     });
 }
-
+// funcion para eliminar producto del carrito
 function eliminarDelCarrito(e) {
+// toastify para alertas de productos eliminados
     Toastify({
         text: "producto eliminado",
         duration: 3000,
@@ -103,8 +105,9 @@ function eliminarDelCarrito(e) {
 }
 
 botonVaciar.addEventListener("click", vaciarCarrito);
+// funcion para vaciar el carrito
 function vaciarCarrito() {
-
+// SweetAlert para alerta interactiva al intentar borrar carrito
     Swal.fire({
         title: '¿Quiere continuar?',
         icon: 'question',
@@ -129,13 +132,15 @@ function vaciarCarrito() {
 
     
 }
-
+// funcion para actualizar el precio total de los productos en el carrito
 function actualizarTotal() {
     const totalCalculado = productosEnCarrito.reduce((acc, producto) => acc + (producto.precio * producto.cantidad), 0);
     total.innerText = `$${totalCalculado}`;
 }
 
 botonComprar.addEventListener("click", comprarCarrito);
+
+// funcion de compra del carrito
 function comprarCarrito() {
 
     productosEnCarrito.length = 0;
